@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
 import { ListCourseComponent } from './components/list-course/list-course.component';
 import { CourseComponent } from './components/course/course.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ListContactComponent } from './components/list-contact/list-contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CourseComponent } from './components/course/course.component';
     FooterComponent,
     MainContainerComponent,
     ListCourseComponent,
-    CourseComponent
+    CourseComponent,
+    ServicesComponent,
+    ListContactComponent
   ],
   imports: [
     BrowserModule,
