@@ -1,25 +1,4 @@
 
-ng new learnlytica
-
-cd learnlytica/
-
-ng g c ./components/header
-ng g c ./components/footer
-ng g c ./components/main-container
-ng g c ./components/list-course
-ng g c ./components/course
-
-npm install bootstrap 
-$ npm i bootstrap
-
-in course component use date pipe, uppercase pipe
--------------------------------------------------
-Once done let me know.
-Form nesting level properly 
-
-Once done please push code to repo, if any issue to push code let me know.
-
-ng g c ./components/services
 
 
 
