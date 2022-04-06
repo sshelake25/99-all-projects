@@ -7,7 +7,7 @@
         {{courseDetails | json}}
         {{courseDetails.price}}
         <h5 class="card-title">{{courseTitle | uppercase}}</h5>
-        <span><b>Course date: </b> {{currentDate | date: 'mm/dd/y'}}</span>
+        <span><b>Course date: </b> {{currentDate | date: 'MMM/dd/y h:mm:ss a' | uppercase}}</span>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>

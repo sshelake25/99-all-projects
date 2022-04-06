@@ -12,8 +12,12 @@ ng g c ./components/course
 npm install bootstrap 
 $ npm i bootstrap
 
-in cousr componet use pipe
-------------------------------------
+in course component use date pipe, uppercase pipe
+-------------------------------------------------
+Once done let me know.
+Form nesting level properly 
+
+Once done please push code to repo, if any issue to push code let me know.
 
 
 
