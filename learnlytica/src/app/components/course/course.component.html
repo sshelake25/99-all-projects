@@ -1,1 +1,15 @@
 <p>course works!</p>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/61aa18860cf26833c8eca46c/61aa18860cf26833c8eca46c_scaled_cover.jpg?v=1"
+        class="card-img-top" alt="...">
+    <div class="card-body">
+        {{courseDetails | json}}
+        {{courseDetails.price}}
+        <h5 class="card-title">{{courseTitle | uppercase}}</h5>
+        <span><b>Course date: </b> {{currentDate | date: 'mm/dd/y'}}</span>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>

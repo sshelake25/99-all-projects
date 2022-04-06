@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
+  courseTitle = 'Git for begginer';
+  currentDate = new Date();
+
+  courseDetails = {
+    title:'ss',
+    price: 100
+  }
 
   constructor() { }
 
