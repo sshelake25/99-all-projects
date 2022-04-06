@@ -1,0 +1,51 @@
+
+Learnlytica App Labs 
+-----------------------------------
+
+ng new learnlytica
+
+cd learnlytica/
+
+ng g c ./components/header
+ng g c ./components/footer
+ng g c ./components/main-container
+ng g c ./components/list-course
+ng g c ./components/course
+
+npm install bootstrap 
+$ npm i bootstrap
+
+in course component use date pipe, uppercase pipe
+-------------------------------------------------
+Once done let me know.
+Form nesting level properly 
+
+---------------------------------------------------
+
+ng g c ./components/services
+ng g c ./components/list-contact
+
+app.routing.module.ts -- 
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+const routes: Routes = [
+  { path: 'course', component: ListCourseComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'contact', component: ListContactComponent }
+];
+
+Inside your main-continer
+<div style="min-height: 450px;">
+    <span>when user going to use route that component going load here</span>
+    <router-outlet></router-outlet>
+</div>
+
+-----------------------------------------------------
+Header, footer 
+
+- pipe chaining
