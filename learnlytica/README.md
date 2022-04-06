@@ -1,4 +1,6 @@
 
+ng new learnlytica
+
 cd learnlytica/
 
 ng g c ./components/header
@@ -9,6 +11,11 @@ ng g c ./components/course
 
 npm install bootstrap 
 $ npm i bootstrap
+
+in cousr componet use pipe
+------------------------------------
+
+
 
 
 # Learnlytica
