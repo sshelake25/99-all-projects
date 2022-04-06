@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="alert alert-primary alert-dismissible" role="alert">
+        A simple primary alert—check it out!
+        <button id="close-alert" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+
+    <div id="alert-holder">
+
+    </div>
+
+    <button id="show-alert" class="btn btn-primary">Show alert</button>
+
+    <script>
+        let mycloseBtn = document.getElementById("close-alert");
+
+        mycloseBtn.addEventListener('click', function () {
+                            
+            let alertNode = document.querySelector('.alert');
+            let alert = bootstrap.Alert.getInstance(alertNode);
+            alert.close();
+        });
+
+        let btnAlert = document.getElementById('show-alert');
+        let alHolder = document.getElementById('alert-holder');
+
+        btnAlert.addEventListener('click', function () {
+            let wrapper = document.createElement('div');
+            let alertElement = "<div  class='alert alert-primary alert-dismissible' role='alert'>A simple primary alert—check it out!  <button id='close-alert' type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+
+            wrapper.innerHTML = alertElement;
+
+            alHolder.append(wrapper);
+        });
+    </script>
+</body>
+
+</html>

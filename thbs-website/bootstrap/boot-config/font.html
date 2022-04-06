@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     -->
+
+     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+
+    <style>
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+        @font-face {
+            font-family: "Indie Flower";
+            src: url("./fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
+        }
+
+        .welcome-area {
+            font-family: 'Hurricane', cursive;
+            font-size: 48px;
+        }
+
+        .indi-flower {
+            font-family: 'Indie Flower', Fallback, sans-serif;
+        }
+
+        /* Step 1: Common Properties: All required to make icons render reliably */
+        .icon::before {
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Step 2: Reference Individual Icons */
+        .login::before {
+            font: var(--fa-font-solid);
+            content: "\f007";
+        }
+
+        /* Note: Make sure to include the correct weight and Unicode value for the icon */
+        .tps::before {
+            font: var(--fa-font-solid);
+            content: "\f1ea";
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <i class="bi-alarm"></i>
+    <br>
+
+    <i class="bi-activity"></i>
+    <br>
+    <i class="fa fa-solid fa-angles-left"></i>
+    <br>
+
+    <i class="fa fa-camera-retro fa-lg"></i> fa-lg
+    <i class="fa fa-camera-retro fa-2x"></i> fa-2x
+    <i class="fa fa-camera-retro fa-3x"></i> fa-3x
+    <i class="fa fa-camera-retro fa-4x"></i> fa-4x
+    <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+
+    <br>
+
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+
+    <ul style="margin: 0;">
+        <li><span class="icon login"></span> Login</li>
+        <li><span class="icon tps"></span> TPS Reports</li>
+    </ul>
+    <div class="welcome-area">
+        Making the Web Beautiful!
+
+        If you do not want to use any of the standard fonts in HTML, you can use Google Fonts.
+
+        Google Fonts are free to use, and have more than 1000 fonts to choose from.
+    </div>
+    <div class="indi-flower">
+        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end
+        open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components,
+        and powerful JavaScript plugins.
+    </div>
+    <br>
+    <div>
+        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end
+        open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components,
+        and powerful JavaScript plugins.
+    </div>
+</body>
+
+</html>

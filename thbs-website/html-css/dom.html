@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Page </title>
+
+    <script>
+        // Save data to sessionStorage
+        sessionStorage.setItem('class', 'MEAN');
+
+        // Get saved data from sessionStorage
+        let data = sessionStorage.getItem('class');
+
+        console.log(data);
+
+        // Remove saved data from sessionStorage
+        sessionStorage.removeItem('key');
+
+        // Remove all saved data from sessionStorage
+        // sessionStorage.clear();
+    </script>
+</head>
+
+<body>
+    <p title="hello world" class="thbs-p-class hello">First p tag</p>
+    <p>second p tag</p>
+
+    <h2>111 This is h2 tag</h2>
+    <h2 id="thbs"> 222 This is h2 tag</h2>
+
+    <script>
+    //     //creaete element with help of doc
+    //     let mySpan = document.createElement("span");
+    //     mySpan.innerHTML = "This span tag added by js";
+
+    //    //update or attacheh this element to dom
+    //    document.getElementById("thbs").append(mySpan);
+    </script>
+</body>
+
+</html>

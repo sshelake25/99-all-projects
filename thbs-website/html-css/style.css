@@ -1,0 +1,19 @@
+body {
+    border: 1px solid red;
+}
+
+#about-us {
+    border: 5px solid yellow;
+}
+
+#thbs-contact {
+  border: 5px dashed paleturquoise;
+}
+
+.thbsp1 {
+    font-size: 30px;
+}
+
+.thbsp2 {
+    background-color: aqua;
+}

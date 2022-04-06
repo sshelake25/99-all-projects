@@ -1,0 +1,136 @@
+body {
+    background-color: #EFEFEF;
+}
+
+.main-cotainer {
+    /* horizontal center */
+    margin: 0 auto;
+    width: 800px;
+    border:1px solid goldenrod;
+}
+
+.thbh-prod-block {
+
+    padding-top: 10px;
+    clear: both;
+}
+
+.thbh-prod-block  .thbs-imgcont {
+   /* border: 2px solid ghostwhite; */
+float: right;
+
+margin: 0 20px;
+
+
+}
+
+
+
+.thbs-imgcont {
+    border: 3px solid ghostwhite;
+    width: 250px;
+    background-color: #FFF;
+
+}
+
+.thbs-imgcont img {
+    width: 150px;
+    height: 160px;
+}
+
+.thbs-imgcont ul {
+    padding: 0;
+    margin: 0;
+}
+
+.thbs-imgcont .thbs-linkcont {
+    float: right;
+    width: 80px; 
+    /* margin-right: 50px;
+    margin-top: 10px; */
+     /* border: 1px solid red; */
+}
+
+.thbs-imgcont .thbs-linkcont li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.thbs-imgcont .thbs-linkcont a { 
+    text-decoration: none;
+}
+
+.thbs-imgcont .thbs-linkcont a:hover { 
+    color: blue;
+    font-size: 16px;
+}
+
+.thbs-get-app {
+    clear: right;
+    background-image: url('./images/app_familybg.jpg');
+    border:1px solid red;
+    width: 773px;
+    height: 395px;
+}
+
+
+.container {
+    width: 350px;
+    height: 200px;
+    outline: dashed 1px black;
+    /* Setup */
+    position: relative;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+  }
+
+
+  .thbs-flow {
+      border:1px solid royalblue; 
+      width: 500px;
+      height: 200px;
+      /* overflow: scroll; */
+      /* overflow-y: scroll; */
+      overflow-y: hidden;
+      overflow-x: scroll;
+  }
+
+
+  html {
+    font-size: 10px;
+  }
+  
+  .ems li {
+    font-size: 2em;
+  }
+  
+  .rems li {
+    font-size: 2rem;
+  }
+  
+
+  .parent {
+      border: 1px solid red;
+      width: 100%;
+      height: 200px;
+      font-size: 100%;
+  }
+
+  .thbs-child {
+       border: 1px green solid;
+      
+  }
+
+  .thbs-images {
+      width: 100%;
+      height: 100%;
+  }

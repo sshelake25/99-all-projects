@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration form</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: auto;
+            background-color: var(--scrollbar-bg, auto)
+        }
+
+        h1,
+        #imp-note,
+        .thbs-color,
+        .thbs-note {
+            /* color:rgb(162, 226, 43); */
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        a:hover {
+            border: 1px solid red;
+        }
+
+        /* p::first-line {
+            font-weight: bolder;
+            background-color: rgb(215, 244, 253);
+        } */
+
+
+        div>p {
+            color: fuchsia;
+        }
+
+        .thbs-color>span {
+            color: blue;
+        }
+
+        .box p {
+            background-color: aqua;
+        }
+
+        h1+p {
+            font-weight: bold;
+            background-color: rgb(185, 214, 228);
+            color: rgb(255, 255, 255);
+            padding: .5em;
+        }
+
+        h1~p {
+            font-weight: bold;
+            background-color: #333;
+            color: #fff;
+            padding: .5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+        <h1>A heading</h1>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.</p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </article>
+    <br><br>
+
+    <!-- decendant slecctor -->
+    <div class="box">
+        <p>Text in .box</p>
+        <p>Text in .2</p>
+    </div>
+
+
+    <p>Text not in .box</p>
+
+    <h1>Happly Holi, Enjoy colors </h1>
+    <a  href="#">Hello Link </a>
+    <br>
+    <div>
+        <p>I am inside div</p>
+        <p>I am inside div</p>
+        <p>I am inside div</p>
+    </div>
+    <br>
+    <span id="imp-note">Please note, dont weast waster!!!</span>
+    <p class="thbs-color">
+        <span>Hello inside thbs color class span</span>
+        You have met selectors already. A CSS selector is the first part of a CSS Rule. It is a pattern of elements and
+        other terms that tell the browser which HTML elements should be selected to have the CSS property values inside
+        the rule applied to them. The element or elements which are selected by the selector are referred to as the
+        subject of the selector.
+    </p>
+
+    <div class="thbs-color">
+        <span>Hello inside thbs color class span</span>
+        You have met selectors already. A CSS selector is the first part of a CSS Rule. It is a pattern of elements and
+        other terms that tell the browser which HTML elements should be selected to have the CSS property values inside
+        the rule applied to them. The element or elements which are selected by the selector are referred to as the
+        subject of the selector.
+    </div>
+    <p class="thbs-note">I could also combine these into a selector list, by adding a comma between them.</p>
+</body>
+
+</html>

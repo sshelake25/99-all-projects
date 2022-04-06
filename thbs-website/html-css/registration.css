@@ -1,0 +1,11 @@
+/* body {
+    border: 3px salmon solid;
+} */
+
+.form-container {
+    width: 500px;
+    left: 300px;
+}
+.form-example {
+    border:1px solid greenyellow
+}

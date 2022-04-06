@@ -1,0 +1,29 @@
+{
+  "name": "thbs-learn",
+  "version": "1.0.0",
+  "description": "this is demo for bootstap",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twbs/bootstrap.git"
+  },
+  "keywords": [
+    "bootstap",
+    "start",
+    "hello"
+  ],
+  "author": "THBS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twbs/bootstrap/issues"
+  },
+  "homepage": "https://github.com/twbs/bootstrap#readme"
+}

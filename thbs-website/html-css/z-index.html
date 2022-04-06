@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnig z -index</title>
+
+    <style>
+        .wrapper {
+            position: relative;
+        }
+
+        .dashed-box {
+            /* position: relative;
+            z-index: 1; */
+            border: dashed;
+            height: 100px;
+          
+        }
+
+        .gold-box {
+            position: absolute;
+            z-index: 999;
+            /* put .gold-box above .green-box and .dashed-box */
+            background: gold;
+            width: 80%;
+            left: 50px;
+            top: 30px;
+        }
+
+        .green-box {
+            position: absolute;
+            /* z-index: -1; */
+            /* put .green-box above .dashed-box */
+            background: lightgreen;
+            width: 20%;
+            left: 65%;
+            top: 25px;
+            height: 50px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="dashed-box">Dashed box</div>
+        <div class="gold-box">Gold box</div>
+        <div class="green-box">Green box</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+
+node_modules
+
+/fonts/fontawesome/js/*
+/fonts/fontawesome/svgs/*
+/fonts/fontawesome/sprites/*
+/fonts/fontawesome/webfonts/*
+/fonts/fontawesome/less/*
+/fonts/fontawesome/scss/*
+/fonts/*.zip
+
+/fonts/fontawesome/css/*.min.css
+/fonts/fontawesome/metadata

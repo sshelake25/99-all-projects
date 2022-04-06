@@ -1,0 +1,18 @@
+#header {
+    color: rgb(52, 212, 240);
+}
+
+#header .navigation {
+    font-size: 12px;
+    border: 1px solid rgb(83, 224, 137);
+}
+
+#header .logo {
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* .logo {
+    width: 500px;
+    border: 1px solid rgb(32, 10, 10); 
+} */
