@@ -15,6 +15,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { AddressComponent } from './components/address/address.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 const myRoutes: Routes = [
@@ -36,14 +39,14 @@ const myRoutes: Routes = [
     ServicesComponent,
     ListContactComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    AddressComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-     AppRoutingModule
-
- //   RouterModule.forRoot(myRoutes) //{useHash: true}
-
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
