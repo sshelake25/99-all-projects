@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -9,14 +9,22 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class ContactFormComponent implements OnInit {
   langs = ['ENG', "HIND", 'TELGU', 'KANDA'];
 
-  myform : FormGroup = new FormGroup(
+  myform: FormGroup = new FormGroup(
     {
-    fname: new FormControl(),
-    lname: new FormControl(),
-    email_thbs: new FormControl(),
-    password: new FormControl(),
-    lang: new FormControl()
-  }
+      fname: new FormControl('', Validators.required),
+      lname: new FormControl('', Validators.required),
+      email_thbs: new FormControl('',
+        [
+          Validators.required,
+          Validators.email,
+          Validators.minLength(4)
+        ]
+      ),
+      password: new FormControl('',
+        [Validators.required, Validators.minLength(5), Validators.maxLength(10)]
+      ),
+      lang: new FormControl('',)
+    }
   );
 
   constructor() { }
