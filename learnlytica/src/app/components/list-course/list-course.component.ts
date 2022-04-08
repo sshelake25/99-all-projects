@@ -7,13 +7,13 @@ import { ConfigService } from 'src/app/services/config.service';
   styleUrls: ['./list-course.component.css']
 })
 export class ListCourseComponent implements OnInit {
-
+  cList: any;
   constructor(private mConfig: ConfigService) { }
 
   ngOnInit(): void {
     //return type ---> 
     this.mConfig.getCourseList().subscribe((sdata) => {
-      console.log(sdata)
+      this.cList = sdata;
     });
   }
 
