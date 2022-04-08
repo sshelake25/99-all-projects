@@ -9,6 +9,7 @@ import { ConfigService } from 'src/app/services/config.service';
 export class CourseComponent implements OnInit {
   @Input() configs: any;
   @Input() imgid: any;
+  
   imgUrl: any;
 
   courseTitle = 'Git for begginer';

@@ -85,4 +85,16 @@ learnlytica --> asset -> mock-data --> course-list.json
 
 course-list component
 -------------------------------------------------------
-
+Looping over data recived on course-list and send input props to course child compo
+<div class="row">
+    <div class="col" *ngFor="let course of cList?.['sub-home'].data">
+        {{course._id | json}}
+        <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+        </app-course>
+    </div>
+</div>
+-------------------------------------------------------
+recived data in child course comp
+  @Input() configs: any;
+  @Input() imgid: any;
+  imgUrl: any;
