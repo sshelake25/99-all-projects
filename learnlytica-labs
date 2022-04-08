@@ -72,3 +72,16 @@ ng g s ./services/config
       });
 -------------------------------------------------------
 On config service you need to remove --> provideIn: 'root;
+NullInjector -->
+-------------------------------------------------------
+Mock data --> Work on mock/sample data
+
+learnlytica --> asset -> mock-data --> course-list.json
+
+
+  getCourseList() {
+    //observable
+    return this.myHttp.get('assets/mock-data/courses-list.json');
+  }
+
+  
