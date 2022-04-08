@@ -49,3 +49,26 @@ Inside your main-continer
 Header, footer 
 
 - pipe chaining
+
+------------------------------------------------------
+HttpClient service and usage of services in angular
+
+ng g s ./services/config
+- HttpClientModule -- Root module
+- Taken dependancy of HttpClient Service
+- we stared using httpClinet instance to send get api call 
+  ---> retrive data from api --> URL
+      getCourseConfigs() {
+        return this.myHttp.get('https://httpstat.us/200');
+      }
+  --- Add dependancy of config service on course components
+  --- onNgInit method 
+     --> access data from getCourseConfig method..
+
+// retune type-->Observabele
+    this.myConfig.getCourseConfigs().subscribe(
+      (data) => {
+        console.log(data)
+      });
+-------------------------------------------------------
+On config service you need to remove --> provideIn: 'root;
