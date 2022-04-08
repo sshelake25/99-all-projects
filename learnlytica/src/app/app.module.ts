@@ -19,6 +19,7 @@ import { AddressComponent } from './components/address/address.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoutes: Routes = [
 
@@ -46,7 +47,8 @@ const myRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
