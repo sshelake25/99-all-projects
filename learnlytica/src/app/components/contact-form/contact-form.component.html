@@ -53,13 +53,12 @@
             <label>Language</label>
             <select formControlName="lang" class="form-control">
                 <option value="">Please select a language</option>
-                <option [value]="lang" *ngFor="let lang of langs">{{lang}}</option>
+                <option [value]="mylang" *ngFor="let mylang of langs">{{mylang}}</option>
             </select>
         </div>
 
         <div class="form-group m-2">
             <!-- [disabled]="myform.invalid" -->
-            <button mat-button mat-dialog-close>Cancel</button>
             <button class="btn btn-primary" (click)="getValues()">Submit</button>
         </div>
     </form>

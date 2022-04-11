@@ -112,8 +112,16 @@ slider componet angular mterial  ->  that module should imported inside import a
 <mat-slider  [min]="1" [max]="100" [step]="1" [value]="50">
 </mat-slider>
 
-
 //--------------- Dialog Component from angular material 
+- Login / SignUp button ini header compoent 
+- (click)="openLoginModal()"
+- .ts openLoginModal() {}
+- add/take dependancy of modelDialog service into constrctor of header
+- this.mydialog.open(CompClassName, {width: '300px', '500px'});
+ {
+  height: '500px',
+  width: '600px',
+  disableClose: true
+  }
 
-- Create dialog holder compoent 
-- Home compoponent --> DataTransferItemList.open('');
+   <button mat-button mat-dialog-close>Cancel</button>
