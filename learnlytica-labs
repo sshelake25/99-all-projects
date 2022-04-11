@@ -102,3 +102,18 @@ recived data in child course comp
 Add angular material in Project
 
 ng add @angular/material
+
+We need to config theme for matrial componet -- StyleSheet.css 
+
+@import url("../node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+
+slider componet angular mterial  ->  that module should imported inside import array of project
+
+<mat-slider  [min]="1" [max]="100" [step]="1" [value]="50">
+</mat-slider>
+
+
+//--------------- Dialog Component from angular material 
+
+- Create dialog holder compoent 
+- Home compoponent --> DataTransferItemList.open('');
