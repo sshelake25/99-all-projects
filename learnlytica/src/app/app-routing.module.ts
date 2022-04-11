@@ -5,12 +5,14 @@ import { ListContactComponent } from './components/list-contact/list-contact.com
 import { ListCourseComponent } from './components/list-course/list-course.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'course', component: ListCourseComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'contact', component: ListContactComponent },
+    { path: 'profiles', component: ListProfilesComponent },
     { path: '**', component: NotFoundComponent }
 ];
 

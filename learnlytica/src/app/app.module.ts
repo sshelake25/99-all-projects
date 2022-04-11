@@ -21,11 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatSliderModule } from '@angular/material/slider';
-import { MatDialogModule } from '@angular/material/dialog';
-
 import { LoginComponent } from './components/login/login.component';
+import { MaterialExampleModule } from './materials/materials.module';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
 const myRoutes: Routes = [
 
@@ -49,7 +47,8 @@ const myRoutes: Routes = [
     HomeComponent,
     AddressComponent,
     ContactFormComponent,
-    LoginComponent
+    LoginComponent,
+    ListProfilesComponent
   ],
   imports: [
     BrowserModule,
@@ -57,8 +56,7 @@ const myRoutes: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatDialogModule
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
