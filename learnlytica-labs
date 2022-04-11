@@ -98,3 +98,7 @@ recived data in child course comp
   @Input() configs: any;
   @Input() imgid: any;
   imgUrl: any;
+-------------------------------------------------------
+Add angular material in Project
+
+ng add @angular/material
