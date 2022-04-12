@@ -152,5 +152,7 @@ slider componet angular mterial  ->  that module should imported inside import a
     }
 ---------------------------------------------------------------------------
 Lifecycle hooks 
+-------------------------------------------------
+RxJs
 
-
+ng g c reactive

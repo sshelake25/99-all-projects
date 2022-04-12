@@ -23,8 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { MaterialExampleModule } from './materials/materials.module';
-import { ListProfilesComponent } from './list-profiles/list-profiles.component';
-import { DetailProfileComponent } from './detail-profile/detail-profile.component';
+import { ListProfilesComponent } from './components/list-profiles/list-profiles.component';
+import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 const myRoutes: Routes = [
 
@@ -50,7 +51,8 @@ const myRoutes: Routes = [
     ContactFormComponent,
     LoginComponent,
     ListProfilesComponent,
-    DetailProfileComponent
+    DetailProfileComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,
