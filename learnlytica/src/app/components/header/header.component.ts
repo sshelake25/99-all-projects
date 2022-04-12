@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
 import { LoginComponent } from '../login/login.component';
+import { filter } from 'rxjs/operators'
 
 @Component({
   selector: 'app-header',
@@ -9,10 +11,17 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(private myDialog: MatDialog) { }
+  isAboutUs = false;
+  constructor(
+    private myDialog: MatDialog,
+    private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((data: any) => {
+        this.isAboutUs = data['url'] === '/services';
+      })
   }
 
 
