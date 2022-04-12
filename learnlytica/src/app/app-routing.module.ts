@@ -5,6 +5,7 @@ import { ListContactComponent } from './components/list-contact/list-contact.com
 import { ListCourseComponent } from './components/list-course/list-course.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ServicesComponent } from './components/services/services.component';
+import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
     { path: 'services', component: ServicesComponent },
     { path: 'contact', component: ListContactComponent },
     { path: 'profiles', component: ListProfilesComponent },
-    { path: '**', component: NotFoundComponent }
+    { path: 'profiles/:pid', component: DetailProfileComponent },
+    { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

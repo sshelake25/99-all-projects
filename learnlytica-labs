@@ -125,3 +125,28 @@ slider componet angular mterial  ->  that module should imported inside import a
   }
 
    <button mat-button mat-dialog-close>Cancel</button>
+
+   ---------------------------------------------------
+   Display and use table from angular materail
+   - create seprate materila.module.ts file and include all the module in that file
+   - ng g c list-profiles
+   - https://material.angular.io/components/table/overview
+   - html copy to .html and data copy apporirate 
+   - add route callled profile and bind the componset
+   - test 
+   -------------------------------------------------------
+   ng new routing-app --routing --defaults
+   Adding dynamic paramters to routes 
+    profile list page --
+    specfic get details  // -- param
+    ng g c detail-profile
+    //add new route to ap
+    { path: 'profiles/:pid',  component: DetailProfileComponent },
+    fetch details to DetailProfileComponent
+    constructor(private activatedRoute: ActivatedRoute) { }
+    
+    onNgInit() {
+      this.activatedRoute.param.subcribe( (mydata) => {  = mydata['pid]});
+        this.activatedRoute.params.subscribe(params => this.prodName = params['pid']);
+        this.activatedRoute.queryParams.subscribe(params => this.qParam = params);
+    }

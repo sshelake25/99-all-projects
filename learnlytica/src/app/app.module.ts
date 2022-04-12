@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { MaterialExampleModule } from './materials/materials.module';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
+import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 
 const myRoutes: Routes = [
 
@@ -48,7 +49,8 @@ const myRoutes: Routes = [
     AddressComponent,
     ContactFormComponent,
     LoginComponent,
-    ListProfilesComponent
+    ListProfilesComponent,
+    DetailProfileComponent
   ],
   imports: [
     BrowserModule,
