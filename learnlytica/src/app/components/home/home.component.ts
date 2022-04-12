@@ -9,7 +9,13 @@ export class HomeComponent implements OnInit {
 
   isEnable = false;
 
-  constructor() { }
+  isFriday: string;
+
+  constructor() {
+    const d = new Date(); //js object
+    //ternary oprator 
+    this.isFriday = d.getDay() < 3 ? 'Day is monday tue or web' : 'firday sat sund ';
+  }
 
   ngOnInit(): void {
   }

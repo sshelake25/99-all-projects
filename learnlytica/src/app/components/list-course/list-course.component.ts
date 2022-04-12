@@ -11,7 +11,6 @@ export class ListCourseComponent implements OnInit {
   constructor(private mConfig: ConfigService) { }
 
   ngOnInit(): void {
-    //return type ---> 
     this.mConfig.getCourseList().subscribe((sdata) => {
       this.cList = sdata;
     });
