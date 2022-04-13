@@ -8,6 +8,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 import { ListProfilesComponent } from './components/list-profiles/list-profiles.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'profiles', component: ListProfilesComponent },
     { path: 'profiles/:pid', component: DetailProfileComponent },
     { path: 'rxjs', component: ReactiveComponent },
+    { path: 'template-form', component: TemplateFormComponent },
     { path: '**', component: NotFoundComponent },
 ];
 

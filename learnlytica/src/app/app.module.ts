@@ -28,6 +28,7 @@ import { DetailProfileComponent } from './components/detail-profile/detail-profi
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { ImgsrcDirective } from './directives/imgsrc.directive';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 
 const myRoutes: Routes = [
 
@@ -56,12 +57,14 @@ const myRoutes: Routes = [
     DetailProfileComponent,
     ReactiveComponent,
     TitlePipe,
-    ImgsrcDirective
+    ImgsrcDirective,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialExampleModule

@@ -225,3 +225,35 @@ export class ThbsBackgroudDirective {
 // usage of direct 
 <h1 thbsBackgroud>Welcome to ANGULAR Course</h1>
 
+--------------------------------------------------------------
+Template driven forms 
+--------------------------------------------------------------
+ng g c ./compoents/template-form
+added route for templete comp
+header comp we give lik
+template-form --> added bootstap raw form
+Import --> FormsModule inside root module 
+-- form <form #f="ngForm" novalidate>
+-- input control --> name="any uniqe" ngModel --> its template drivean form 
+--- If do --> two ways binding [(ngModel)]="proprty of class" -->
+--- Submit event 
+   <div class="form-group">
+        <button (click)="getFormsValue(f)">Submit</button>
+    </div>
+.ts -> getFormsValue(fvalue) {
+}
+--------------------------------------------------------------
+Validations on Template drive form 
+#myFname="ngModel"
+ <pre>
+            valid? {{myFname.valid }}
+            invalid? {{myFname.invalid }}
+            dirty? {{myFname.dirty }}
+            pristine? {{myFname.pristine }}
+            touched? {{myFname.touched }}
+            untouched? {{myFname.untouched }}
+        </pre>
+<input name="lname" ngModel type="text" class="form-control" minlength="3" #mylname="ngModel">
+<div class="text-danger" *ngIf="mylname.touched && mylname.invalid">
+    <p *ngIf="mylname?.errors?.['minlength']">Lastname must be at least 3 characters long</p>
+</div>
