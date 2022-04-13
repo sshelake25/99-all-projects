@@ -161,10 +161,18 @@ add route
 add first obs sction in to reactive compoet 
 interval(1000).subscribe(val => console.log(`I am obs stream value -> ${val}`));
 ---------------------------------------------------------------------------------
+
 - ng g s ./services/user
-- mock jsdon for list users
+- mock jsdon for list users //
+  Will user readymade api --> we build --> node js
+
+   https://mocki.io/v1/d4867d8b-b5d5-4a48-a4ab-79131b5809b8
+
 - hit mock json from httpclient service from user
 - list-user  ->> user.getUsers();
     [{}, {}, {}]
+    li *ngFor
+
+    
        <user [userConfig]="user"  *ngFpr="let user of userList"></user>  
 
