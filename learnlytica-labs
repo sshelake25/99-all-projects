@@ -194,3 +194,34 @@ ng g p ./pipes/title
     } else {
       return 'Miss' + ' ' + value;
     }
+
+@Pipe({
+  name: ''
+})
+@Componenet({
+
+})
+@Direcitve({
+  name: ['']
+})
+-------------------------------------------------
+Create another pipe called -- bracket 
+After applying piple it should transfer value like -- (100$)
+{{100 | braket }} --> (100$)
+{{400 | braket }} --> (400$)
+--------------------------------------------------
+Custome directive 
+ng g d ./directives/ThbsBackgroud
+
+@Directive({
+  selector: '[thbsBackgroud]'
+})
+export class ThbsBackgroudDirective {
+  constructor(private myelem: ElementRef) {
+    this.myelem.nativeElement.style.backgroundColor = 'yellow';
+    this.myelem.nativeElement.innerHTML  = "dadsad";
+  }
+}
+// usage of direct 
+<h1 thbsBackgroud>Welcome to ANGULAR Course</h1>
+

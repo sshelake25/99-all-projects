@@ -27,6 +27,7 @@ import { ListProfilesComponent } from './components/list-profiles/list-profiles.
 import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
+import { ImgsrcDirective } from './directives/imgsrc.directive';
 
 const myRoutes: Routes = [
 
@@ -54,7 +55,8 @@ const myRoutes: Routes = [
     ListProfilesComponent,
     DetailProfileComponent,
     ReactiveComponent,
-    TitlePipe
+    TitlePipe,
+    ImgsrcDirective
   ],
   imports: [
     BrowserModule,
