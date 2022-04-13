@@ -26,6 +26,7 @@ import { MaterialExampleModule } from './materials/materials.module';
 import { ListProfilesComponent } from './components/list-profiles/list-profiles.component';
 import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TitlePipe } from './pipes/title.pipe';
 
 const myRoutes: Routes = [
 
@@ -52,7 +53,8 @@ const myRoutes: Routes = [
     LoginComponent,
     ListProfilesComponent,
     DetailProfileComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    TitlePipe
   ],
   imports: [
     BrowserModule,

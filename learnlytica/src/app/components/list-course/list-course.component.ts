@@ -8,6 +8,8 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class ListCourseComponent implements OnInit {
   cList: any;
+  myTitle : string = 'THBS';
+  
   constructor(private mConfig: ConfigService) { }
 
   ngOnInit(): void {

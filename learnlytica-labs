@@ -173,6 +173,24 @@ interval(1000).subscribe(val => console.log(`I am obs stream value -> ${val}`));
     [{}, {}, {}]
     li *ngFor
 
-    
+
        <user [userConfig]="user"  *ngFpr="let user of userList"></user>  
 
+---------------------------------------------------------------------------
+In-build pipes -- upercase, lowecase, json, currency, date, decimal
+
+ng g p ./pipes/title
+- list course com 
+- .ts --> myTitle : string = 'THSB'; -->
+- .html  {{myTitle | title:'angular':'react'}}
+    return value + '<--->' + args[0];
+<h1>{{ myTitle  | title:'react js'}}</h1>
+
+<h1>{{userTitle | title: 'Mr...'}}</h1>
+
+    console.log(value, args)
+    if (args[0]) {
+      return args[0] + ' ' + value
+    } else {
+      return 'Miss' + ' ' + value;
+    }
