@@ -155,4 +155,16 @@ Lifecycle hooks
 -------------------------------------------------
 RxJs
 
-ng g c reactive
+ng g c ./component/reactive
+link to header navigation
+add route 
+add first obs sction in to reactive compoet 
+interval(1000).subscribe(val => console.log(`I am obs stream value -> ${val}`));
+---------------------------------------------------------------------------------
+- ng g s ./services/user
+- mock jsdon for list users
+- hit mock json from httpclient service from user
+- list-user  ->> user.getUsers();
+    [{}, {}, {}]
+       <user [userConfig]="user"  *ngFpr="let user of userList"></user>  
+
