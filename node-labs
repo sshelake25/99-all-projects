@@ -1,0 +1,11 @@
+node -v
+npm -v
+
+mkdir todo-node
+cd todo-node
+touch app.js 
+------------------------
+Write ver first webserver code in node js
+start sever with 
+node app.js
+test in bowser and postman tool
