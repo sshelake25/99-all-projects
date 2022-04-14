@@ -1,0 +1,20 @@
+{
+  "name": "todo-node",
+  "version": "1.0.0",
+  "description": "this learning project",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "node",
+    "fist",
+    "app"
+  ],
+  "author": "thbs mean",
+  "license": "ISC"
+}
