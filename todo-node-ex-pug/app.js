@@ -28,13 +28,23 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+let mylogger = function (req, res, next) {
+  console.log(`I am in middleware and path is `)
+  //next()
+};
+
+
+
 app.use('/', homeRouter);
 app.use('/users', usersRouter);
-
 app.use('/payment', cartPayment)
+app.use(mylogger);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
+  console.log('I am in 404 middlewaer')
+  // console.log(req);
   next(createError(404));
 });
 
@@ -46,17 +56,7 @@ app.use(
 );
 
 
-// app.use('/thbs',
-//   router.get('/',function(req, res, next) {
-//     res.send('respond with a resource');
-//   })
-// );
 
-app.use((req, res, next) => {
-  console.log(req)
-  console.log('I am in middle ware')
-
-})
 
 // error handler
 app.use(
