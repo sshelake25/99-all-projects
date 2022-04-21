@@ -4,6 +4,12 @@
 <h1>{{ myTitle  | title:'react js'}}</h1>
 
 <br>
+
+
+<div *ngFor="let user of userList">
+    {{user | json}}
+</div>
+
 <mat-tab-group mat-align-tabs="start">
     <mat-tab label="First">
 
