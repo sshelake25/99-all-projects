@@ -12,6 +12,8 @@ export class ListCourseComponent implements OnInit {
   myTitle: string = 'THBS';
 
   userList: any;
+  //obs naming convestion 
+  myUserList$!: any;
 
   constructor(
     private mConfig: ConfigService,
@@ -23,9 +25,11 @@ export class ListCourseComponent implements OnInit {
       this.cList = sdata;
     });
 
-    this.myUserSrv.getProfiles().subscribe((result: any) => {
-      this.userList = result;
-    })
+    // this.myUserSrv.getProfiles().subscribe((result: any) => {
+    //   this.userList = result;
+    // });
+
+    this.myUserList$ = this.myUserSrv.getProfiles();
 
   }
 

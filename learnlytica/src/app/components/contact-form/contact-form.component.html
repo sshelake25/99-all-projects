@@ -1,14 +1,14 @@
 <div class="border border-info m-2 p-3">
     <h2>Contact US</h2>
     {{myform.value | json}}
-    <br>
+    <!-- <br>
     <br>
     <pre>Dirty? {{ myform.controls['fname'].dirty }}</pre>
     <pre>pristine? {{ myform.controls['fname'].pristine }}</pre>
     <pre>touched? {{ myform.controls['fname'].touched }}</pre>
     <pre>untouched? {{ myform.controls['fname'].untouched }}</pre>
     <pre>valid? {{ myform.controls['fname'].valid }}</pre>
-    <pre>invalid? {{ myform.controls['fname'].invalid }}</pre>
+    <pre>invalid? {{ myform.controls['fname'].invalid }}</pre> -->
 
     <form novalidate [formGroup]="myform">
 

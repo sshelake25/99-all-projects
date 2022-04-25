@@ -1,13 +1,17 @@
 <!-- <pre>{{cList.sub-home | json}}</pre> -->
 
 <br>
-<h1>{{ myTitle  | title:'react js'}}</h1>
+<h1>{{ myTitle | title:'react js'}}</h1>
 
 <br>
-
-
+Previous 
 <div *ngFor="let user of userList">
     {{user | json}}
+</div>
+
+After Async Usage
+<div *ngFor="let user of myUserList$ | async; index as i">
+    <h2>{{user.username}} - {{user.email}}</h2>
 </div>
 
 <mat-tab-group mat-align-tabs="start">

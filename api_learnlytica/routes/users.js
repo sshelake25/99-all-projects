@@ -15,7 +15,10 @@ router.get('/', function (req, res, next) {
 });
 
 //localhost:3000/user/--> POST
-router.post('/', function (req, res, next) {
+router.post('/contact', function (req, res, next) {
+
+  console.log(req.body);
+  
   res.send('I am post call');
   // dbConnection.query('select * from user_profile', (error, results, fields) => {
   //   if (error) throw error;
