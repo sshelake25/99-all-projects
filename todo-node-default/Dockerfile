@@ -17,3 +17,6 @@ COPY . .
 
 EXPOSE 3000
 CMD [ "node", "./bin/www" ]
+
+# docker build -t abc
+# express app
