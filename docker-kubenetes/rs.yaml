@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-thbs
+  labels:
+    app: rs-thbs
+spec:
+  # modify replicas according to your case
+  replicas: 4
+  selector:
+    matchLabels:
+      app: MYAPP
+
+  template:
+    metadata:
+      labels:
+        app: MYAPP
+    spec:
+      containers:
+      - name: MYAPP
+        image: nginx/nginx
+        ports:
+        - name: web
+          containerPort:  80
+          protocol: TCP
+        env:
+        - name: NGX_VERSION
+          value: 1.16.1
+      #   volumeMounts:
+      #   - name: localtime
+      #     mountPath: /etc/localtime
+      # volumes:
+      #   - name: localtime
+      #     hostPath:
+      #       path: /usr/share/zoneinfo/Asia/Shanghai

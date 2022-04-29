@@ -1,0 +1,24 @@
+---
+kind: Pod
+apiVersion: v1
+metadata: #name of pos                      ""
+  name: testpod
+spec:
+  containers: # conatinerr in po; d
+    - name: c00 # name of conato;ner
+      image: ubuntu #which command need to run once started
+      command:
+        ["/bin/bash", "-c", "while true; do echo Hello-World; sleep 5 ; done"]
+    
+     - name: c01 # name of conato;ner
+      image: ubuntu #which command need to run once started
+      command:
+        ["/bin/bash", "-c", "while true; do echo Hello-World; sleep 5 ; done"]
+  restartPolicy: Never # Defaults to Always
+
+# Save and quite file
+
+# Kubectl create -f pod1.yml
+
+# kubectl apply -f pod1.yml // create pod and run container
+

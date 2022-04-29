@@ -1,0 +1,27 @@
+# why pod life short, if termited etc.. it can't start 
+# pod --> conatiner - application stop
+
+# Relication Controller 
+# always man no replica pod -- 4 termina --> create new pod
+
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: rc-thbs
+spec:
+  replicas: 4
+  selector:
+    type: angular # which pod has label key = type and value = angular 
+  template:
+    # pod spcification
+    metadata:
+      name: pod1
+      labels:
+        type: angular
+    spec:
+      containers:
+        - name: myapp
+          image: nginx
+          ports:
+            - containerPort: 80
+

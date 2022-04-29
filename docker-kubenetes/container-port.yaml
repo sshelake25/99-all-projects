@@ -1,0 +1,31 @@
+# POD WITH PORTS
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod4
+  labels:
+    env: stage
+    size : small
+spec:
+  containers:
+    - name: c00
+      image: httpd
+      ports:
+       - containerPort: 80  
+      env:
+       - name: batch
+         value: 99
+       - name: skill
+         value: fullstack
+
+# *********************END**************************************************
+# Create pods 
+
+# Kubectl get pods -o wide 
+
+# Curl ip:80
+
+# Delete pod
+
+# Get pods
