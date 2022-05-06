@@ -1,15 +1,20 @@
-<h2>Template driven form </h2>
+<h2>Create user profile (template driven) </h2>
 <form #f="ngForm" novalidate>
-    {{f.value | json}}
+    <!-- {{f.value | json}} -->
     <div class="form-group">
-        <pre>
+        <!-- <pre>
             valid? {{myFname.valid }}
             invalid? {{myFname.invalid }}
             dirty? {{myFname.dirty }}
             pristine? {{myFname.pristine }}
             touched? {{myFname.touched }}
             untouched? {{myFname.untouched }}
-        </pre>
+        </pre> -->
+{{isUserAdded}}
+        <div *ngIf="isUserAdded">
+            ***User has been added succesffuly***
+        </div>
+
         <label>First Name</label>
         <input type="text" class="form-control" ngModel name="fname" #myFname="ngModel" required>
         <div class="text-danger" *ngIf="myFname.touched && myFname.invalid">
@@ -40,8 +45,8 @@
             </option>
         </select>
     </div>
-
+<br>
     <div class="form-group">
-        <button (click)="getFormsValue(f)">Submit</button>
+        <button (click)="getFormsValue(f)">Create User</button>
     </div>
 </form>
