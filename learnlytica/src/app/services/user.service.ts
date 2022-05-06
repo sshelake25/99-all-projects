@@ -24,7 +24,18 @@ export class UserService {
 
   submitContactDetails(data: any) {
 
-   return this.myHttp.post('http://localhost:4200/api/users/contact', data);
+    return this.myHttp.post('http://localhost:4200/api/users/contact', data);
+  }
+
+
+  loginUser(uname: string, password: string) {
+    //rest api call to express
+    let loginData = {
+      username: uname,
+      password: password
+    };
+
+    return this.myHttp.post('api/users/login-user', loginData);
   }
 
 }

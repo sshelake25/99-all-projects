@@ -29,6 +29,7 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { ImgsrcDirective } from './directives/imgsrc.directive';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
+import { UserLoginComponent } from './components/user-login/user-login.component';
 
 const myRoutes: Routes = [
 
@@ -58,7 +59,8 @@ const myRoutes: Routes = [
     ReactiveComponent,
     TitlePipe,
     ImgsrcDirective,
-    TemplateFormComponent
+    TemplateFormComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,

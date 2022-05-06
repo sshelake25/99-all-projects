@@ -9,10 +9,12 @@ import { DetailProfileComponent } from './components/detail-profile/detail-profi
 import { ListProfilesComponent } from './components/list-profiles/list-profiles.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
+import { UserLoginComponent } from './components/user-login/user-login.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'course', component: ListCourseComponent },
+    { path: 'user-login', component: UserLoginComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'contact', component: ListContactComponent },
     { path: 'profiles', component: ListProfilesComponent },

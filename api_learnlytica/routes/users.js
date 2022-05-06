@@ -49,6 +49,36 @@ router.post('/create-user', function (req, res, next) {
 
 });
 
+
+router.post('/login-user', (req, res, next) => {
+  let {
+    username,
+    password
+  } = req.body; // destructing of object property 
+
+  let userFound = `select * from user_profile  WHERE username = '${username}' and password= '${password}'`;
+
+  dbConnection.query(userFound, (error, result, fields) => {
+
+    if (error) {
+      res.send(error);
+    } else {
+      if (result.length) {
+        // res.send(`{message: 'user found', usercount: 1}`);
+        res.json(result)
+      } else {
+        // res.send(`{message: 'user no found', usercount: 0}`);
+        res.json({message: 'user no found', usercount: 0})
+      }
+    }
+
+  });
+
+
+});
+
+
+
 //delete user //CRUD
 router.delete('/delete-user/:userId', (req, res, next) => {
   let userId = req.params.userId;
