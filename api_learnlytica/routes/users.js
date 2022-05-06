@@ -14,11 +14,70 @@ router.get('/', function (req, res, next) {
 
 });
 
+
+//inset user profile
+
+router.post('/create-user', function (req, res, next) {
+
+  let {
+    username,
+    email,
+    password,
+    first_name,
+    last_name,
+    job_title,
+    salary,
+    create_datetime,
+  } = req.body // destructing of object property 
+
+
+  let insert_query = `INSERT INTO user_profile 
+            (username, email, password, first_name, last_name, job_title, salary, create_datetime)
+             VALUES ('${username}', '${email}', '${password}', '${first_name}', '${last_name}', '${job_title}', ${salary}, '${create_datetime}')`;
+
+  dbConnection.query(insert_query, (error, result, fields) => {
+
+    if (error) {
+      res.send(error);
+      throw error;
+    } else {
+      console.log(result);
+      res.send('user profile added added sucesff');
+    }
+
+  });
+
+});
+
+//delete user //CRUD
+router.delete('/delete-user/:userId', (req, res, next) => {
+  let userId = req.params.userId;
+  let deleletq = `DELETE FROM user_profile WHERE id = '${userId}'`;
+
+  dbConnection.query(deleletq, (error, result, fields) => {
+    if (error) {
+      res.send(error);
+      throw error;
+    } else {
+      console.log(result);
+      if (result.affectedRows) {
+        res.send(`${userId} has been delete`)
+      } else {
+        res.send(`Unable to delete user, Not Found`);
+      }
+    }
+  });
+
+});
+
+
+
+
 //localhost:3000/user/--> POST
 router.post('/contact', function (req, res, next) {
 
   console.log(req.body);
-  
+
   res.send('I am post call');
   // dbConnection.query('select * from user_profile', (error, results, fields) => {
   //   if (error) throw error;
