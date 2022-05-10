@@ -1,0 +1,13 @@
+{
+    "Id": "Policy1652082045390",
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1652082032239",
+        "Action": "s3:*",
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::thbs99-static-web/*",
+        "Principal": "*"
+      }
+    ]
+  }

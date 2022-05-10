@@ -53,24 +53,11 @@ export class UserLoginComponent implements OnInit {
 
     this.loading = true;
 
-    // this.myuser.loginUser(this.f['username'].value, this.f['password'].value)
-    //   .subscribe(
-    //     data => {
-    //       this.router.navigate([this.returnUrl]);
-    //     },
-    //     error => {
-    //       // this.alertService.error(error);
-    //       this.loading = false;
-    //     })
-
-
-
     this.myuser.loginUser(this.f['username'].value, this.f['password'].value)
       .subscribe(
         {
           next: (data: any) => {
             this.loading = false;
-
 
             if (data.length) {
               this.router.navigate(['/course']);
@@ -85,10 +72,7 @@ export class UserLoginComponent implements OnInit {
           }
         }
       )
-
-
   }
-
 }
 
 

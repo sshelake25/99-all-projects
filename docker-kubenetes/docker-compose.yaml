@@ -1,0 +1,10 @@
+Version: '3'
+Services:
+  webapp1:
+    Image :nginx
+    ports:
+      - "8000: 80"
+  webapp2:
+    Image :nginx
+    ports:
+      - "8001: 80"
