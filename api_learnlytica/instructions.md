@@ -15,3 +15,7 @@ dbconn.js
         database: process.env.DB_NAME,
         insecureAuth : true
     });
+
+docker images -aq // only give image id
+
+docker rmi -f $(docker images -aq)
