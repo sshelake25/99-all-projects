@@ -13,6 +13,7 @@ services:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     volumes:
       - db:/var/lib/mysql
+
   node_app:
     depends_on:
       - mysqldb
