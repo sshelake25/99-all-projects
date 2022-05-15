@@ -7,7 +7,10 @@ let dbConnection = require('./../db/db').localConnect();
 
 //localhost:3000/user/--> GET
 router.get('/', function (req, res, next) {
-  dbConnection.query('select * from user_profile', (error, results, fields) => {
+
+// let myid = req.query.email;
+
+  dbConnection.query('select * from user_profile ', (error, results, fields) => {
     if (error) throw error;
     res.send(results)
   });

@@ -29,7 +29,7 @@ export class ListCourseComponent implements OnInit {
     //   this.userList = result;
     // });
 
-    this.myUserList$ = this.myUserSrv.getProfiles();
+    this.myUserList$ = this.myUserSrv.getProfiles('ss@gmail.com');
 
   }
 
