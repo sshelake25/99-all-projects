@@ -1,15 +1,32 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function HeaderLayout(props) {
+{/* <HeaderLayout title="dadsa"></HeaderLayout> */ }
+export default class HeaderLayout extends React.Component {
+    constructor() {
+        super();
 
-    return (
-        <>
-            <ul>
-                <li>
-                    <Link to="/">HomePage</Link>
-                    <Link to="/user">UserPage</Link>
-                </li>
-            </ul>
-        </>
-    )
+        this.state = {
+            URL: "www.thbs.com",
+            name: "test"
+        };
+    }
+
+    render() {
+        return (
+            <>
+                <div>
+                    {this.props.title}
+                    {this.state.URL} -- {this.state.name}
+                </div>
+                <ul>
+                    <li>
+                        <Link to="/">HomePage </Link>
+                        <Link to="/user">UserPage</Link>
+                    </li>
+                </ul>
+            </>
+        )
+    }
+
 }
