@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.thbs-header {
+  min-height: 100px;
+  background-color: aqua;
+}
+
+.thbs-main {
+  min-height: 500px;
+}
+
+.thbs-footer {
+  border: 1px solid red;
+  /* min-height: 200px; */
+  background-color: aqua;
+}
