@@ -2,6 +2,8 @@
 // class based component
 import React from 'react';
 
+import Address from './address';
+
 class Comment extends React.Component {
 
     render() {
@@ -13,6 +15,7 @@ class Comment extends React.Component {
                 <div className="Comment-date">
                     {this.props.date}
                 </div>
+                <Address time="THBSSSSSSSSSS"></Address>
             </>
         )
     }

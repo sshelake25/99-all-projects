@@ -16,7 +16,7 @@ import Comment from './comment';
  */
 
 
-function App() {
+export default function App() {
   let myTitle = "Welcome to react js learning camp";
   return (
     <>
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
