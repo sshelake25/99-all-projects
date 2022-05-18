@@ -26,3 +26,7 @@ code {
   /* min-height: 200px; */
   background-color: aqua;
 }
+
+.nav-item {
+  padding: 10px;
+}

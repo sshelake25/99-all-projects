@@ -9,7 +9,7 @@ export default class MainLayout extends React.Component {
 
     render() {
         return (
-            <div className="thbs-main">
+            <div className="thbs-main container">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/user" element={<UserPage />} />
