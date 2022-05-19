@@ -5,9 +5,9 @@ export default function RegistrationPage(props) {
 
 
     return (
-        <>
+        <div className="container">
             <FormComponent></FormComponent>
-        </>
+        </div>
     );
 
 }
