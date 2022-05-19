@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage';
 import UserPage from '../pages/UserPage';
 import UserListPage from '../pages/UserListPage';
 import HooksPage from '../pages/HooksPage';
+import RegistrationPage from '../pages/RegistrationPage';
 
 
 export default class MainLayout extends React.Component {
@@ -16,6 +17,7 @@ export default class MainLayout extends React.Component {
                     <Route path="/user" element={<UserPage />} />
                     <Route path="/list" element={<UserListPage />} />
                     <Route path="/hooks" element={<HooksPage />} />
+                    <Route path="/reg" element={<RegistrationPage />} />
                 </Routes>
             </div>
         )
